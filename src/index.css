@@ -1,13 +1,112 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body{
+    background: #fbfbfb;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+
+/* UI */
+.btn{
+  border-radius: 2px !important;
+}
+.btn-primary{
+  background: #f90 !important ;
+  border-color: #f90 !important;
+}
+button.btn-block{
+  width: 100%;
+}
+.btn:hover,.btn:active, .btn:focus{
+  box-shadow: none !important;
+}
+
+
+/* Header , Navbar */
+.main-navbar{
+  background: #f90;
+  display: flex;
+  padding: .5em 2em;
+}
+.main-navbar .navbar-brand{
+  font-size: 2em;
+  font-weight: 700;
+  color: #fff;
+}
+.main-navbar .nav-link{
+  color: #fff;
+  font-weight: 500;
+  margin: 0px .8rem;
+}
+.main-navbar .nav-link.outline{
+  border: 2px solid !important;
+  border-radius: 10px !important;
+}
+
+
+/* Product Block */
+.product{
+  margin-bottom: 2rem;
+  background: #f9f9f9;
+  padding: 0.5em;
+  border-radius: 10px;
+}
+.product img{
+  width: 100%;
+  height: 15rem;
+}
+.product .detail{
+  padding: .5rem 0rem;
+}
+.product .name{
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.product .price{
+  font-weight: 700;
+  margin: 0px;
+}
+
+/* Cart Item Row */
+.cart-item td{
+  margin-bottom: 2em;
+}
+.cart-item .item{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 0px;
+}
+.cart-item .item img{
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+.cart-item .qtyButton{
+  margin: 0px 1em;
+  background: #f90;
+  font-size: 18px;
+  font-weight: 700;
+  width: 40px;
+  height: 40px;
+  padding: 0px;
+  border-radius: 50%;
+}
+.input-group>.form-control, .input-group>.form-floating, .input-group>.form-select {
+  flex: none !important;
+  min-width: 5rem !important;
+}
+
+
+/* Add Item */
+
+img.preview{
+  width: 100%;
+  height: 15rem;
 }
